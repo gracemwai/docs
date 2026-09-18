@@ -8,6 +8,7 @@ The Probe web application is built with **Next.js** and provides the main interf
   </div>
 </div>
 ---
+
 ##  Frontend Setup
 Navigate to the dashboard project:
 ```bash
@@ -17,6 +18,7 @@ Install the required dependencies:
 ```bash
 npm install
 ```
+
 ### Environment Variables
 Create a `.env.local` file in the project root:
 ```env
@@ -37,7 +39,9 @@ https://herckersdashboard-seven.vercel.app/
 ### Web — Next.js
 The Probe web application is built using **Next.js** with the **App Router**.
 The application is organized into routes, reusable components, API communication utilities, and MQTT functionality to support maintainability and simple onboarding.
+
 ### Application Structure
+
 ```text
 app/
 ├── api/
@@ -110,6 +114,7 @@ app/
 ├── globals.css
 └── layout.tsx
 ```
+
 The structure separates application routes from reusable UI components and communication utilities.
 ---
 ##  Component Structure
@@ -199,6 +204,7 @@ Booking Endpoint
 ```
 ---
 ##  API Integration & API Service
+
 ### API Service Layer
 All backend communication is routed through a centralized API service defined in:
 ```text
