@@ -6,7 +6,7 @@ The mobile application communicates with the same FastAPI backend used by the we
 
 <div class="probe-features probe-features-3col">
   <div class="probe-card">
-    <img src="/images/frontend-phone.jpg" alt="Mobile app screen 1" class="probe-screenshot">
+    <img src="/images/frontend-phone.jpg" alt="Mobile app screen 1" class="probe-screenshot"/>
     <h3>Home</h3>
   </div>
   <div class="probe-card">
