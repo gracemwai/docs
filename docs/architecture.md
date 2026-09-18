@@ -10,7 +10,7 @@ Battery condition is derived from real sensor readings collected during testing.
 
 The Probe architecture connects the physical battery testing process with the digital platform.
 
-<!-- Add your system architecture image here -->
+{/* Add your system architecture image here */}
 
 ![Probe System Architecture](/images/images/System-Architecture.jpeg)
 
