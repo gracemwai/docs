@@ -1,7 +1,7 @@
 # PROBE
 <div align="center">
 
-<img src="/images/images/image.jpg" alt="Probe Logo" width="180">
+<img src="/images/images/image.jpg" alt="Probe Logo" width="180"/>
 
 </div>
 
