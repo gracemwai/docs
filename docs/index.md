@@ -1,8 +1,6 @@
 # PROBE
 <div align="center">
-
-<img src="/images/images/image.jpg" alt="Probe Logo" width="180"/>
-
+  <img src="/images/images/image.jpg" alt="Probe Logo" width="180"/>
 </div>
 
 ## Battery Testing & Reuse Platform
@@ -14,11 +12,11 @@ Connect suitable batteries to their next useful life.
   <a href="https://herckersinformationalwebsite.vercel.app/" class="probe-button primary">Informational Website →</a>
   <a href="./overview" class="probe-button primary">Explore Documentation →</a>
 </div>
+
 <div align="center">
-
-<img src="/images/images/main-page.jpg" alt="Probe Core Matrix" style="max-width: 700px; width: 100%; border-radius: 12px; margin: 30px 0;"/>
-
+  <img src="/images/images/main-page.jpg" alt="Probe Core Matrix" style="max-width: 700px; width: 100%; border-radius: 12px; margin: 30px 0;"/>
 </div>
+
 
 ---
 
