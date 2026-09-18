@@ -12,8 +12,8 @@ Connect suitable batteries to their next useful life.
   <a href="https://herckersinformationalwebsite.vercel.app/" class="probe-button primary">Informational Website →</a>
   <a href="./overview" class="probe-button primary">Explore Documentation →</a>
 </div>
-
 <div align="center">
+  ## Ready to explore the technology behind Probe?
   <img src="/images/images/main-page.jpg" alt="Probe Core Matrix" style="max-width: 700px; width: 100%; border-radius: 12px; margin: 30px 0;"/>
 </div>
 
