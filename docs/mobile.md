@@ -3,7 +3,6 @@
 The Probe mobile application is a cross-platform application built with **Flutter and Dart**. It supports field operations for recyclers and UPS companies by providing access to device registration, battery information, live data, reports, bookings, and user profiles.
 
 The mobile application communicates with the same FastAPI backend used by the web dashboard, allowing both platforms to work with the same users, batteries, devices, sensor readings, and booking data.
-
 <div class="probe-features probe-features-3col">
   <div class="probe-card">
     <img src="/images/frontend-phone.jpg" alt="Mobile app screen 1" class="probe-screenshot"/>
