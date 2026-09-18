@@ -4,7 +4,7 @@ The Probe web application is built with **Next.js** and provides the main interf
 
 <div class="probe-features" style="grid-template-columns: 1fr; max-width: 700px; margin: 24px auto;">
   <div class="probe-card">
-    <img src="/images/frontend-web.jpg" alt="Frontend Web overview" class="probe-screenshot">
+    <img src="/images/frontend-web.jpg" alt="Frontend Web overview" class="probe-screenshot"/>
     <h3>Frontend Web Dashboard</h3>
   </div>
 </div>
