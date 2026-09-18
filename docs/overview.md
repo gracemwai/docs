@@ -8,17 +8,12 @@ Probe is a cloud-connected battery testing and inventory platform designed to he
 
 
 By combining **IoT-enabled battery testing, a backend API, inventory management, and booking workflows**, Probe creates a bridge between battery recyclers and organizations looking for reliable second-life battery sources.
-
-
-
-
 <div class="probe-buttons" style="justify-content: flex-start;">
   <a href="./hardware" class="probe-button primary">Explore the Hardware →</a>
   <a href="./backend/overview" class="probe-button primary">Explore the Backend →</a>
 </div>
 
 ## Platform Highlights
-
 <div class="probe-features probe-features-3col">
   <div class="probe-card">
     <img src="/images/recycler-landing-page.jpg" alt="Recycler landing page" class="probe-screenshot"/>
@@ -52,7 +47,6 @@ By combining **IoT-enabled battery testing, a backend API, inventory management,
 Probe provides a structured workflow for taking a used battery from **physical testing to potential reuse**.
 
 A recycler places a battery into the Probe testing hardware. The connected sensors capture electrical and environmental measurements, including:
-
 <div class="probe-tags">
   <span class="probe-tag">Temperature</span>
   <span class="probe-tag">Resting voltage</span>
@@ -92,19 +86,14 @@ This creates a clearer workflow from battery testing → assessment → inventor
 Tests batteries, registers battery assets, manages inventory, and views testing data.
 
 </div>
-
 <div class="probe-role-box">
-
 **UPS Company**
 Browses available batteries, views battery information, and submits booking requests.
-
 </div>
 
 <div class="probe-role-box">
-
 **Admin**
 Manages users, oversees the platform, and accesses administrative functionality.
-
 </div>
 
 ## Key Features
