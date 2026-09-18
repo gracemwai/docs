@@ -1,66 +1,43 @@
 #  Frontend Web
 
 The Probe web application is built with **Next.js** and provides the main interface for interacting with the battery testing, inventory, device, and booking systems.
-
 <div class="probe-features" style="grid-template-columns: 1fr; max-width: 700px; margin: 24px auto;">
   <div class="probe-card">
     <img src="/images/frontend-web.jpg" alt="Frontend Web overview" class="probe-screenshot"/>
     <h3>Frontend Web Dashboard</h3>
   </div>
 </div>
-
 ---
-
 ##  Frontend Setup
-
 Navigate to the dashboard project:
-
 ```bash
 cd HERckers_Dashboard
 ```
-
 Install the required dependencies:
-
 ```bash
 npm install
 ```
-
 ### Environment Variables
-
 Create a `.env.local` file in the project root:
-
 ```env
 NEXT_PUBLIC_API_URL=https://probe-herckers-3325e295df63.herokuapp.com
 ```
-
 For the deployed application, `NEXT_PUBLIC_API_URL` should point to the hosted backend API.
-
 ### Run the Dashboard
-
 Start the development server:
-
 ```bash
 npm run dev
 ```
-
 The dashboard will be available at:
-
 ```text
 https://herckersdashboard-seven.vercel.app/
 ```
-
 ---
-
 ##  Architecture Pattern
-
 ### Web — Next.js
-
 The Probe web application is built using **Next.js** with the **App Router**.
-
 The application is organized into routes, reusable components, API communication utilities, and MQTT functionality to support maintainability and simple onboarding.
-
 ### Application Structure
-
 ```text
 app/
 ├── api/
@@ -133,15 +110,10 @@ app/
 ├── globals.css
 └── layout.tsx
 ```
-
 The structure separates application routes from reusable UI components and communication utilities.
-
 ---
-
 ##  Component Structure
-
 Reusable UI components live in `app/components/` and are shared across the application's routes. Each component handles a focused piece of the interface.
-
 | Component | Responsibility |
 | :-------- | :-------------- |
 | **`battery-dashboard.tsx`** | Displays battery testing data and metrics on the dashboard. |
@@ -160,23 +132,15 @@ Reusable UI components live in `app/components/` and are shared across the appli
 | **`signup-form.tsx`** | Handles new user signup input and submission. |
 
 Component-specific styling is co-located using CSS Modules, such as `auth-form.module.css`, `landing-page.module.css`, and `profile-page.module.css`, keeping styles scoped to their corresponding component.
-
 ---
-
 ##  State Propagation, Token Management and Route Security
-
 ### Network Communication Core
-
 The project routes external communication requests through unified client abstractions in:
-
 ```text
 app/lib/api.ts
 ```
-
 This allows authentication information to be added automatically to protected API requests.
-
 The authentication header is generated using the stored JWT:
-
 ```typescript
 const getAuthHeaders = (): Record<string, string> => {
   const token =
@@ -192,11 +156,8 @@ const getAuthHeaders = (): Record<string, string> => {
   };
 };
 ```
-
 ### Booking Request
-
 Booking creation is also handled through the centralized API communication layer:
-
 ```typescript
 export async function submitBookingCreation(
   payload: BookingPayload
@@ -222,9 +183,7 @@ export async function submitBookingCreation(
   return response.json();
 }
 ```
-
 The resulting flow is:
-
 ```text
 User
  ↓
@@ -238,36 +197,24 @@ FastAPI Backend
  ↓
 Booking Endpoint
 ```
-
 ---
-
 ##  API Integration & API Service
-
 ### API Service Layer
-
 All backend communication is routed through a centralized API service defined in:
-
 ```text
 app/lib/api.ts
 ```
-
 Rather than individual components implementing their own `fetch` logic, each component calls a shared function from this service layer. This keeps request construction, authentication, and error handling consistent across the application.
-
 ### Integration Pattern
-
 A typical API integration follows this pattern:
-
 1. A component calls a function exported from `app/lib/api.ts` (e.g., `submitBookingCreation`).
 2. The service function builds the target URL using `process.env.NEXT_PUBLIC_API_URL`.
 3. `getAuthHeaders()` attaches the JWT token, if available, to the request headers.
 4. The request is sent to the FastAPI backend using `fetch`.
 5. The response is checked for errors; failed requests throw an `Error` with the backend's returned detail message.
 6. On success, the parsed JSON response is returned to the calling component.
-
 ### Endpoints Used
-
 The frontend integrates with the following backend resources:
-
 ```text
 /users/
 /devices/
@@ -275,9 +222,7 @@ The frontend integrates with the following backend resources:
 /v1/sensor-readings/
 /bookings/
 ```
-
 ### Example: Authenticated Request Headers
-
 ```typescript
 const getAuthHeaders = (): Record<string, string> => {
   const token =
@@ -293,9 +238,7 @@ const getAuthHeaders = (): Record<string, string> => {
   };
 };
 ```
-
 ---
-
 ##  Navigational Rails & Route Security
 
 ### Context-Aware Sub-Navigation
