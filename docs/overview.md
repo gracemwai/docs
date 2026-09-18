@@ -21,27 +21,27 @@ By combining **IoT-enabled battery testing, a backend API, inventory management,
 
 <div class="probe-features probe-features-3col">
   <div class="probe-card">
-    <img src="/images/recycler-landing-page.jpg" alt="Recycler landing page" class="probe-screenshot">
+    <img src="/images/recycler-landing-page.jpg" alt="Recycler landing page" class="probe-screenshot"/>
     <h3>Recycler Landing Page</h3>
   </div>
   <div class="probe-card">
-    <img src="/images/device-registry.jpg" alt="Battery registry" class="probe-screenshot">
+    <img src="/images/device-registry.jpg" alt="Battery registry" class="probe-screenshot"/>
     <h3>Battery Registry</h3>
   </div>
   <div class="probe-card">
-    <img src="/images/live-data.jpg" alt="Live battery testing data" class="probe-screenshot">
+    <img src="/images/live-data.jpg" alt="Live battery testing data" class="probe-screenshot"/>
     <h3>Live Testing Data</h3>
   </div>
   <div class="probe-card">
-    <img src="/images/ups-landing-page.jpg" alt="UPS company landing page" class="probe-screenshot">
+    <img src="/images/ups-landing-page.jpg" alt="UPS company landing page" class="probe-screenshot"/>
     <h3>UPS Landing Page</h3>
   </div>
   <div class="probe-card">
-    <img src="/images/booking.jpg" alt="Booking page" class="probe-screenshot">
+    <img src="/images/booking.jpg" alt="Booking page" class="probe-screenshot"/>
     <h3>Booking</h3>
   </div>
   <div class="probe-card">
-    <img src="/images/booking-confirmation.jpg" alt="Booking confirmation page" class="probe-screenshot">
+    <img src="/images/booking-confirmation.jpg" alt="Booking confirmation page" class="probe-screenshot"/>
     <h3>Booking Confirmation</h3>
   </div>
 </div>
